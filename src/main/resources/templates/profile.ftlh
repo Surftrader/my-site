@@ -12,12 +12,13 @@
     </div>
     <div class="col-lg-8 col-md-12 mb-8">
         <h1 style="color: white">Меня зовут Сергей.</h1>
-        <h6 align="justify" style="text-indent: 20px">
+        <hr/>
+        <h6 align="justify" style="text-indent: 60px">
             <p>Программирование - моё хобби.</p>
             <p>Здесь я буду выкладывать свои проекты.</p>
-            <p>Кого заинтересует сотрудничество, пишите по ссылке ниже.</p>
+            <p>Кого заинтересует сотрудничество, пишите по <a href="mailto:poseal@gmail.com" style="color:blue">ссылке</a>.</p>
         </h6>
-        <p><a href="mailto:poseal@gmail.com" style="color:blue">Задавайте вопросы по электронной почте</a></p>
+        <#--<p><a href="mailto:poseal@gmail.com" style="color:blue">Задавайте вопросы по электронной почте</a></p>-->
     </div>
 </div>
 </div>

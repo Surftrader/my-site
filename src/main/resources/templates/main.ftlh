@@ -2,7 +2,7 @@
 
 <@c.page>
 <h2 id="welcome_text" class="my-3">Добро пожаловать!</h2>
-<div id="welcome_text">Это MY PROJECT.</div>
+<div id="welcome_text">Это мой проект.</div>
 
 <div class="container my-3">
 
