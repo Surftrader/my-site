@@ -1,6 +1,6 @@
 <#import "parts/common.ftlh" as c>
 
-<@c.page>
+<@c.pageCommon>
 <div class="container my-3" align="center">
     <h1 style="color: white">Обо мне.</h1>
 </div>
@@ -22,4 +22,4 @@
     </div>
 </div>
 </div>
-</@c.page>
+</@c.pageCommon>
