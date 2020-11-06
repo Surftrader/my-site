@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>ua.com.poseal</groupId>
 	<artifactId>my-site</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>my-site</name>
 	<description>Spring Boot project</description>

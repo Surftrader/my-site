@@ -2,7 +2,6 @@
 <#import "parts/card.ftlh" as card>
 
 <@c.pageTarot>
-<#--<div class="container my-3" align="center">-->
     <div class="row">
         <div class="col" align="center">
             <#if errorMessage ?? >
@@ -12,6 +11,5 @@
             </#if>
         </div>
     </div>
-<#--</div>-->
 
 </@c.pageTarot>

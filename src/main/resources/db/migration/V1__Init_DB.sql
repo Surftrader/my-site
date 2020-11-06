@@ -1,7 +1,5 @@
 use admin_default;
 
-# DROP TABLE db_tarot.cards;
-
 create table cards (
   id bigint not null auto_increment,
   description varchar(255),

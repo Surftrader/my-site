@@ -18,7 +18,6 @@
             <p>Здесь я буду выкладывать свои проекты.</p>
             <p>Кого заинтересует сотрудничество, пишите по <a href="mailto:poseal@gmail.com" style="color:blue">ссылке</a>.</p>
         </h6>
-        <#--<p><a href="mailto:poseal@gmail.com" style="color:blue">Задавайте вопросы по электронной почте</a></p>-->
     </div>
 </div>
 </div>

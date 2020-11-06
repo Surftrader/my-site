@@ -2,24 +2,20 @@
 <#import "parts/card.ftlh" as card>
 
 <@c.pageTarot>
-<#--<div class="container my-3" align="center">-->
+
     <div class="row">
         <div class="col" align="center">
             <h1 style="color: white">Расчет по дате рождения.</h1>
         </div>
     </div>
-<#--</div>-->
 
-<#--<div class="container my-3">-->
     <div class="row my-3">
         <div class="col-sm">
             <form class="form-group" method="post">
                 <div class="form-group row">
                     <div class="col-4">
-                    <#--<label for="birthday" class="col-2 col-form-label">Дата рождения:</label>-->
                     </div>
                     <div class="col-3">
-                        <#--<input class="form-control" type="date" value="1974-10-25" id="birthday" name="birthday">-->
                         <input class="form-control" type="date" id="birthday" name="birthday">
                     </div>
                     <div class="col-3">
@@ -31,19 +27,18 @@
         </div>
     </div>
 <hr />
-<#--</div>-->
+
+<div align="center">
     <#if birthday??>
     <div align="center">
         <h4><a href="mailto:poddubkas@gmail.com" style="color:wheat">Консультация</a></h4>
     </div>
 <hr/>
-    <#--<div class="container my-3">-->
-        <div class="row">
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>П17:</p>
                 <@card.card pos17 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П18:</p>
                 <@card.card pos18 />
@@ -56,34 +51,28 @@
                 <p>П19:</p>
                 <@card.card pos19 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П20:</p>
                 <@card.card pos20 />
             </div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>П16:</p>
                 <@card.card pos16 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>К31:</p>
                 <@card.card posK31 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П15:</p>
                 <@card.card pos15 />
             </div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>ПР1:</p>
                 <@card.card posR1 />
@@ -92,7 +81,6 @@
                 <p>П9:</p>
                 <@card.card pos9 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П10:</p>
                 <@card.card pos10 />
@@ -101,45 +89,35 @@
                 <p>ПР3:</p>
                 <@card.card posR3 />
             </div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>П1:</p>
                 <@card.card pos1 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П2:</p>
                 <@card.card pos2 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П3:</p>
                 <@card.card pos3 />
             </div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>П4:</p>
                 <@card.card pos4 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П5:</p>
                 <@card.card pos5 />
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>П21:</p>
                 <@card.card pos21 />
@@ -148,12 +126,10 @@
                 <p>П33:</p>
                 <@card.card pos33 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П6:</p>
                 <@card.card pos6 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П7а:</p>
                 <@card.card pos7a />
@@ -164,7 +140,7 @@
             </div>
         </div>
         <hr />
-        <div class="row">
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>П31:</p>
                 <@card.card pos31 />
@@ -173,12 +149,10 @@
                 <p>П34:</p>
                 <@card.card pos34 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П8:</p>
                 <@card.card pos8 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>П12:</p>
                 <@card.card pos12 />
@@ -189,7 +163,7 @@
             </div>
         </div>
         <hr />
-        <div class="row">
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>П32:</p>
                 <@card.card pos32 />
@@ -198,12 +172,10 @@
                 <p>П35:</p>
                 <@card.card pos35 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>A:</p>
                 <@card.card posA />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>КО7:</p>
                 <@card.card posK07 />
@@ -214,43 +186,33 @@
             </div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>B:</p>
                 <@card.card posB />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>C:</p>
                 <@card.card posC />
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>D:</p>
                 <@card.card posD />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>E:</p>
-                <@card.card posE />>
+                <@card.card posE />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>F:</p>
                 <@card.card posF />
             </div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>T1:</p>
                 <@card.card posT1 />
@@ -259,7 +221,6 @@
                 <p>G1:</p>
                 <@card.card posG1 />
             </div>
-            <div class="col"></div>
             <div class="col">
                 <p>G2:</p>
                 <@card.card posG2 />
@@ -268,38 +229,24 @@
                 <p>T2:</p>
                 <@card.card posT2 />
             </div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>H:</p>
                 <@card.card posH />
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
         </div>
         <hr />
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>I:</p>
                 <@card.card posI />
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
         </div>
-    <#--</div>-->
         <hr />
         <hr />
-        <div class="row">
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>Энергия месяца:</p>
                 <@card.card monthEnergy />
@@ -314,7 +261,7 @@
             </div>
         </div>
         <hr />
-        <div class="row">
+    <div class="d-flex justify-content-center">
             <div class="col">
                 <p>Энергия дня с 00:00 до 12:00:</p>
                 <@card.card dayEnergy1 />
@@ -330,5 +277,6 @@
         </div>
         <hr />
     </#if>
+</div>
 
 </@c.pageTarot>
