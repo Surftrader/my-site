@@ -17,7 +17,7 @@
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Мои проекты </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="/tarot">Проект Light soul</a>
-                        <a class="dropdown-item" href="#">Анроид проект Nutrition Balance (скоро)</a>
+                        <a class="dropdown-item" href="#">Андроид проект Nutrition Balance (скоро)</a>
                     </div>
                 </li>
             </ul>
