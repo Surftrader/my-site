@@ -24,7 +24,7 @@ public class PredictionService {
         prediction.setPos1(cardRepo.findByCardNumber(rightDigit(pos1)));
         int pos2 = normalizeNumber(month);
         prediction.setPos2(cardRepo.findByCardNumber(rightDigit(pos2)));
-        int pos3 = normalizeNumber(year);
+        int pos3 = summYear(year);
         prediction.setPos3(cardRepo.findByCardNumber(rightDigit(pos3)));
         int pos4 = normalizeNumber(pos1 + pos2);
         prediction.setPos4(cardRepo.findByCardNumber(rightDigit(pos4)));

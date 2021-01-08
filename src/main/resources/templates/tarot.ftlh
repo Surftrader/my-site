@@ -65,12 +65,8 @@
             <div class="col">
             </div>
             <div class="col">
-            </div>
-            <div class="col">
                 <p>П6:</p>
                 <@card.card pos6 />
-            </div>
-            <div class="col">
             </div>
             <div class="col">
             </div>
