@@ -42,7 +42,7 @@ VALUES
 INSERT INTO cards
 (card_number, card_name, image_path)
 VALUES
-  (8, 'Справедливость', '09.jpg');
+  (8, 'Сила', '09.jpg');
 INSERT INTO cards
 (card_number, card_name, image_path)
 VALUES
@@ -54,7 +54,7 @@ VALUES
 INSERT INTO cards
 (card_number, card_name, image_path)
 VALUES
-  (11, 'Сила', '12.jpg');
+  (11, 'Справедливость', '12.jpg');
 INSERT INTO cards
 (card_number, card_name, image_path)
 VALUES
