@@ -1,5 +1,6 @@
 package ua.com.poseal.mysite.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.server.ErrorPage;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
@@ -12,6 +13,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
+
+    @Value("${upload.path}")
+    private String uploadPath;
 
     @Bean
     public WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> containerCustomizer() {
@@ -30,5 +34,10 @@ public class MvcConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**")
                 .addResourceLocations("classpath:/static/");
+
+        registry.addResourceHandler(uploadPath + "/**")
+                .addResourceLocations("classpath:" + uploadPath + "/");
     }
+
+
 }

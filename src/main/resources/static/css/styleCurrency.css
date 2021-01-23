@@ -1,0 +1,21 @@
+
+body {
+    color: #113;
+    margin: 0;
+    padding: 0;
+    background-color: limegreen;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Helvetica, Tahoma, Arial;
+
+}
+
+#welcome_text {
+    color: aliceblue;
+}
+
+p {
+    color: white;
+}
