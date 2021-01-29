@@ -9,8 +9,8 @@
     </div>
 
     <hr />
-
-    <div class="d-flex justify-content-center">
+<div class="container">
+    <div class="row">
         <div class="col" align="center">
             <img src="/img/currencyAppImage.jpg" class="img-fluid" alt="Responsive image" style="max-width: 250px; height: auto;">
         </div>
@@ -29,5 +29,6 @@
         </div>
     </div>
     <hr />
+</div>
 
 </@c.pageCurrency>
