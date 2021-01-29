@@ -31,7 +31,7 @@
 <div align="center">
     <#if birthday??>
     <div align="center">
-        <h4><a href="mailto:poddubkas@gmail.com" style="color:wheat">Консультация</a></h4>
+        <h4><a href="mailto:poddubkas@gmail.com" style="color:wheat">Консультация людей, рожденных ${birthday}</a></h4>
     </div>
 <hr/>
 
