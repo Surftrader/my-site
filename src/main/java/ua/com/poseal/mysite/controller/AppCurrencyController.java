@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
+import ua.com.poseal.mysite.service.DownloadService;
 import ua.com.poseal.mysite.util.MediaTypeUtils;
 
 import javax.servlet.ServletContext;
@@ -29,6 +30,9 @@ public class AppCurrencyController {
 
     @Autowired
     private ServletContext servletContext;
+
+    @Autowired
+    private DownloadService downloadService;
 
     @GetMapping
     public String getCurrencyPage(Map<String, Object> model) {
@@ -54,6 +58,7 @@ public class AppCurrencyController {
 
         InputStream inputStream = new FileInputStream(file);
 
+
         return outputStream -> {
             int bytesRead;
             byte[] buffer = new byte[1024];
@@ -61,8 +66,12 @@ public class AppCurrencyController {
                 outputStream.write(buffer, 0, bytesRead);
             }
             inputStream.close();
-        };
 
+            addDownloaderCounter(fileName);
+        };
     }
 
+    synchronized private void addDownloaderCounter(String fileName) {
+        downloadService.saveCounter(fileName);
+    }
 }
