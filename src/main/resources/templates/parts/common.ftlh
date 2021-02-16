@@ -1,4 +1,5 @@
 <#macro pageCommon>
+<#import "/spring.ftl" as spring>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,7 @@
 </#macro>
 
 <#macro pageTarot>
+<#import "/spring.ftl" as spring>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,6 +61,7 @@
 </#macro>
 
 <#macro pageCurrency>
+<#import "/spring.ftl" as spring>
 <!DOCTYPE html>
 <html lang="en">
 <head>

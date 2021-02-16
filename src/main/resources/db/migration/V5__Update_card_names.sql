@@ -1,0 +1,24 @@
+use admin_default;
+
+UPDATE cards SET card_name = 'fool' WHERE card_number = 0;
+UPDATE cards SET card_name = 'magician' WHERE card_number = 1;
+UPDATE cards SET card_name = 'highpriestess' WHERE card_number = 2;
+UPDATE cards SET card_name = 'empress' WHERE card_number = 3;
+UPDATE cards SET card_name = 'emperor' WHERE card_number = 4;
+UPDATE cards SET card_name = 'hierophant' WHERE card_number = 5;
+UPDATE cards SET card_name = 'lovers' WHERE card_number = 6;
+UPDATE cards SET card_name = 'chariot' WHERE card_number = 7;
+UPDATE cards SET card_name = 'strength' WHERE card_number = 8;
+UPDATE cards SET card_name = 'hermit' WHERE card_number = 9;
+UPDATE cards SET card_name = 'wheeloffortune' WHERE card_number = 10;
+UPDATE cards SET card_name = 'justice' WHERE card_number = 11;
+UPDATE cards SET card_name = 'hangedman' WHERE card_number = 12;
+UPDATE cards SET card_name = 'death' WHERE card_number = 13;
+UPDATE cards SET card_name = 'temperance' WHERE card_number = 14;
+UPDATE cards SET card_name = 'devil' WHERE card_number = 15;
+UPDATE cards SET card_name = 'tower' WHERE card_number = 16;
+UPDATE cards SET card_name = 'star' WHERE card_number = 17;
+UPDATE cards SET card_name = 'moon' WHERE card_number = 18;
+UPDATE cards SET card_name = 'sun' WHERE card_number = 19;
+UPDATE cards SET card_name = 'judgement' WHERE card_number = 20;
+UPDATE cards SET card_name = 'world' WHERE card_number = 21;

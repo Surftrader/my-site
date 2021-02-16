@@ -1,8 +1,9 @@
 <#import "parts/common.ftlh" as c>
+<#import "/spring.ftl" as spring>
 
 <@c.pageCommon>
 <div class="container my-3" align="center">
-    <h1 style="color: white">Обо мне.</h1>
+    <h1 style="color: white"><@spring.message "label.about"/></h1>
 </div>
 
 <div class="container my-3">
@@ -11,13 +12,13 @@
         <img src="/static/img/ava.jpg" class="img-thumbnail" alt="">
     </div>
     <div class="col-lg-8 col-md-12 mb-8">
-        <h1 style="color: white">Меня зовут Сергей.</h1>
+        <h1 style="color: white"><@spring.message "label.myname"/></h1>
         <hr/>
-        <h6 align="justify" style="text-indent: 60px">
-            <p>Программирование - моё хобби.</p>
-            <p>Здесь я буду выкладывать свои проекты.</p>
-            <p>Кого заинтересует сотрудничество, пишите по <a href="mailto:poseal@gmail.com" style="color:blue">ссылке</a>.</p>
-        </h6>
+        <h4 align="justify" style="color: navy; text-indent: 60px">
+            <div>
+                <@spring.message "label.programming"/> <a href="mailto:poseal@gmail.com" style="color:blue"><@spring.message "label.link"/></a>.
+            </div>
+        </h4>
     </div>
 </div>
 </div>
