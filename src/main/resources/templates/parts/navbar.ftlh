@@ -1,5 +1,5 @@
 <#import "/spring.ftl" as spring>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" xmlns:spring="http://www.w3.org/1999/html">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">MY PROJECT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,10 +9,10 @@
         <div class="container-fluid">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/"><@spring.message "label.main"/></span></a>
+                    <span><a class="nav-link" href="/"><span><@spring.message "label.main"/></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile"><@spring.message "label.about"/></span></a>
+                    <a class="nav-link" href="/profile"><span><@spring.message "label.about"/></span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><@spring.message "label.projects"/></a>
