@@ -5,8 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <title><@spring.message 'title.welcome'/></title>
-
-
     <meta name="description" content="<@spring.message 'context.description'/>">
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,11 +14,8 @@
 <body>
 <#include "navbar.ftlh">
 <div class="container my-3">
-    <#--<div class="container mt-5">-->
-        <#nested>
-    <#--</div>-->
+    <#nested>
 </div>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -37,7 +32,6 @@
 <head>
     <meta charset="UTF-8">
     <title><@spring.message 'title.tarot'/></title>
-
     <meta name="description" content="<@spring.message 'pageTarot.description'/>">
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -47,11 +41,8 @@
 <body>
     <#include "navbar.ftlh">
 <div class="container my-3">
-<#--<div class="container mt-5">-->
-        <#nested>
-    <#--</div>-->
+    <#nested>
 </div>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -68,7 +59,6 @@
 <head>
     <meta charset="UTF-8">
     <title><@spring.message 'title.android'/></title>
-
     <meta name="description" content="<@spring.message 'pageAndroidCurrency.description'/>">
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -78,11 +68,8 @@
 <body>
     <#include "navbar.ftlh">
 <div class="container my-3">
-<#--<div class="container mt-5">-->
-        <#nested>
-    <#--</div>-->
+    <#nested>
 </div>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

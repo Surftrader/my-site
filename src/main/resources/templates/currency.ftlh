@@ -2,13 +2,11 @@
 <#import "/spring.ftl" as spring>
 
 <@c.pageCurrency>
-
     <div class="row">
         <div class="col" align="center">
             <h1 style="color: white"><@spring.message "label.aboutcurrency"/></h1>
         </div>
     </div>
-
     <hr />
 <div class="container">
     <div class="row">
@@ -31,5 +29,4 @@
     </div>
     <hr />
 </div>
-
 </@c.pageCurrency>

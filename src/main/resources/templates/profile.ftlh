@@ -5,7 +5,6 @@
 <div class="container my-3" align="center">
     <h1 style="color: white"><@spring.message "label.about"/></h1>
 </div>
-
 <div class="container my-3">
 <div class="row">
     <div class="col-lg-4 col-md-12 mb-4">
