@@ -1,5 +1,6 @@
 <#import "parts/common.ftlh" as c>
 <#import "parts/card.ftlh" as card>
+<#import "/spring.ftl" as spring>
 
 <@c.pageTarot>
     <div class="row">
@@ -7,7 +8,7 @@
             <#if errorMessage ?? >
                 <h1 style="color: red">${errorMessage}</h1>
             <#else>
-                <h1 style="color: red">Что то пошло не так. Попробуйте снова.</h1>
+                <h1 style="color: red"><@spring.message "error.message" /></h1>
             </#if>
         </div>
     </div>

@@ -8,7 +8,7 @@
         <div class="container-fluid">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item">
-                    <span><a class="nav-link" href="/"><span><@spring.message "label.main"/></span></a>
+                    <a class="nav-link" href="/"><span><@spring.message "label.main"/></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/profile"><span><@spring.message "label.about"/></span></a>
