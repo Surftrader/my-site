@@ -140,8 +140,8 @@ public class lightSoulController {
             model.put("dayEnergy3", dayEnergy3);
 
         } catch (DateTimeParseException e) {
-            String errorMessage = "Введите правильно дату";
-            model.put("errorMessage", errorMessage);
+            String errorDate = "Error message from message.properties";
+            model.put("errorMessage", errorDate);
             return "error";
 
         } catch (AppException e) {

@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col" align="center">
             <#if errorMessage ?? >
-                <h1 style="color: red">${errorMessage}</h1>
+                <h1 style="color: red"><@spring.message "error.date" /></h1>
             <#else>
                 <h1 style="color: red"><@spring.message "error.message" /></h1>
             </#if>
