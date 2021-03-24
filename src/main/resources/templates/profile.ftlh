@@ -15,7 +15,7 @@
         <hr/>
         <h4 align="justify" style="color: navy; text-indent: 60px">
             <div>
-                <@spring.message "label.programming"/> <a href="mailto:poseal@gmail.com" style="color:blue"><@spring.message "label.link"/></a>.
+                <@spring.message "label.programming"/> <a href="mailto:poseal@gmail.com?subject=<@spring.message "subject.project"/>" style="color:blue"><@spring.message "label.link"/></a>.
             </div>
         </h4>
     </div>

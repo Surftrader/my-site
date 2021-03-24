@@ -29,7 +29,7 @@
 <div align="center">
     <#if birthday??>
     <div align="center">
-        <h4><a href="mailto:poddubkas@gmail.com" style="color:wheat"><@spring.message "label.consultation"/> ${birthday}</a></h4>
+        <h4><a href="mailto:poddubkas@gmail.com?subject=<@spring.message "subject.tarot"/>" style="color:wheat"><@spring.message "label.consultation"/> ${birthday}</a></h4>
     </div>
     <hr/>
     <div class="d-flex justify-content-center">
