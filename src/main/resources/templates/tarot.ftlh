@@ -15,7 +15,7 @@
                 <div class="col-4">
                 </div>
                 <div class="col-3">
-                    <input class="form-control" type="date" id="birthday" name="birthday">
+                    <input class="form-control" type="date" id="birthday" name="birthday" value="1974-10-25">
                 </div>
                 <div class="col-3">
                     <input type="submit" class="btn btn-primary" value="<@spring.message "button.calculate"/>"/>
@@ -102,13 +102,4 @@
     <hr />
     </#if>
 </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
-    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
-    <script>
-        webshims.setOptions('waitReady', false);
-        webshims.setOptions('forms-ext', {type: 'date'});
-        webshims.setOptions('forms-ext', {type: 'time'});
-        webshims.polyfill('forms forms-ext');
-    </script>
 </@c.pageTarot>
