@@ -1,5 +1,7 @@
 package ua.com.poseal.mysite.controller;
 
+import lombok.extern.slf4j.Slf4j;
+import org.aspectj.lang.annotation.SuppressAjWarnings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
@@ -17,10 +19,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.LocalDateTime;
 import java.util.Map;
 
 @Controller
 @RequestMapping("/currency")
+@Slf4j
 public class AppCurrencyController {
 
     @Value("${upload.path}")
@@ -28,11 +32,15 @@ public class AppCurrencyController {
     @Value("${app.currency.filename}")
     private String fileName;
 
-    @Autowired
-    private ServletContext servletContext;
+    private final ServletContext servletContext;
+
+    private final DownloadService downloadService;
 
     @Autowired
-    private DownloadService downloadService;
+    public AppCurrencyController(ServletContext servletContext, DownloadService downloadService) {
+        this.servletContext = servletContext;
+        this.downloadService = downloadService;
+    }
 
     @GetMapping
     public String getCurrencyPage(Map<String, Object> model) {
@@ -73,5 +81,6 @@ public class AppCurrencyController {
 
     synchronized private void addDownloaderCounter(String fileName) {
         downloadService.saveCounter(fileName);
+        log.info("{} was downloaded at {}", fileName, LocalDateTime.now());
     }
 }

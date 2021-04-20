@@ -1,5 +1,6 @@
 package ua.com.poseal.mysite.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,18 +13,24 @@ import ua.com.poseal.mysite.model.Prediction;
 import ua.com.poseal.mysite.service.PredictionService;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeParseException;
 import java.util.Map;
 
 @Controller
 @RequestMapping("/tarot")
+@Slf4j
 public class lightSoulController {
 
+    private final PredictionService predictionService;
+
     @Autowired
-    private PredictionService predictionService;
+    public lightSoulController(PredictionService predictionService) {
+        this.predictionService = predictionService;
+    }
 
     @GetMapping
-    public String getTarotPage(Map<String, Object> model) {
+    public String getTarotPage() {
         return "tarot";
     }
 
@@ -147,6 +154,8 @@ public class lightSoulController {
         } catch (AppException e) {
             return "error";
         }
+        log.info("It was a request with data birthday {}, at {}", birthday, LocalDateTime.now());
+
         return "tarot";
     }
 

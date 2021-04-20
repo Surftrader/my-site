@@ -10,8 +10,12 @@ import java.time.LocalDate;
 @Service
 public class PredictionService {
 
+    private final CardRepo cardRepo;
+
     @Autowired
-    private CardRepo cardRepo;
+    public PredictionService(CardRepo cardRepo) {
+        this.cardRepo = cardRepo;
+    }
 
     public Prediction makePrediction(LocalDate localDate) {
         Prediction prediction = new Prediction();

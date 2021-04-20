@@ -8,8 +8,12 @@ import ua.com.poseal.mysite.repo.DownloadCounterRepo;
 @Service
 public class DownloadService {
 
+    private final DownloadCounterRepo counterRepo;
+
     @Autowired
-    private DownloadCounterRepo counterRepo;
+    public DownloadService(DownloadCounterRepo counterRepo) {
+        this.counterRepo = counterRepo;
+    }
 
     public void saveCounter(String fileName) {
 
