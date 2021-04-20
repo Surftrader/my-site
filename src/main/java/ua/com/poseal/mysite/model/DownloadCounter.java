@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -25,4 +26,6 @@ public class DownloadCounter {
     @Column(name = "download_counter")
     private Long counter;
 
+    @Column(name = "download_time", columnDefinition = "DATETIME")
+    private LocalDateTime localDateTime;
 }

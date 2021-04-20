@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import ua.com.poseal.mysite.model.DownloadCounter;
 import ua.com.poseal.mysite.repo.DownloadCounterRepo;
 
+import java.time.LocalDateTime;
+
 @Service
 public class DownloadService {
 
@@ -21,6 +23,7 @@ public class DownloadService {
 
         if (counter != null) {
             counter.setCounter(counter.getCounter() + 1);
+            counter.setLocalDateTime(LocalDateTime.now());
             counterRepo.saveAndFlush(counter);
         }
     }
