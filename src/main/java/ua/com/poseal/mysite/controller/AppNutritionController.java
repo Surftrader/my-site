@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Controller
-@RequestMapping("/currency")
-public class AppCurrencyController extends DownloadController {
+@RequestMapping("/nutrition")
+public class AppNutritionController extends DownloadController{
 
-    @Value("${app.currency.filename}")
+    @Value("${app.nutrition.filename}")
     private String fileName;
 
-    public AppCurrencyController(ServletContext servletContext, DownloadService downloadService) {
+    public AppNutritionController(ServletContext servletContext, DownloadService downloadService) {
         super(servletContext, downloadService);
     }
 
@@ -28,8 +28,7 @@ public class AppCurrencyController extends DownloadController {
     }
 
     @GetMapping
-    public String getCurrencyPage() {
-        return "currency";
+    public String getNutritionPage() {
+        return "nutrition";
     }
-
 }

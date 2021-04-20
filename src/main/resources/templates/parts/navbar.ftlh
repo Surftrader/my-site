@@ -18,7 +18,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="/tarot"><@spring.message "label.soul"/></a>
                         <a class="dropdown-item" href="/currency"><@spring.message "label.currency"/></a>
-                        <a class="dropdown-item" href="#"><@spring.message "label.nutbalance"/></a>
+                        <a class="dropdown-item" href="/nutrition"><@spring.message "label.nutbalance"/></a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
