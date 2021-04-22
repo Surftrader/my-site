@@ -5,10 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.util.MimeType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBody;
 import ua.com.poseal.mysite.service.DownloadService;
-import ua.com.poseal.mysite.util.MediaTypeUtils;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
@@ -36,7 +36,8 @@ public class DownloadController {
     public StreamingResponseBody downloadApp(
             HttpServletResponse response, String fileName) throws IOException {
 
-        MediaType mediaType = MediaTypeUtils.getMediaTypeForFileName(this.servletContext, fileName);
+//        MediaType mediaType = MediaTypeUtils.getMediaTypeForFileName(this.servletContext, fileName);
+        MediaType mediaType = MediaType.asMediaType(MimeType.valueOf("application/vnd.android.package-archive"));
 
         // Content-Type
         response.setContentType(mediaType.getType());
