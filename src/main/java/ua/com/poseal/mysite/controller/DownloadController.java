@@ -1,7 +1,7 @@
 package ua.com.poseal.mysite.controller;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,18 +17,15 @@ import java.io.InputStream;
 import java.time.LocalDateTime;
 
 @Slf4j
+@RequiredArgsConstructor
 public class DownloadController {
 
     @Value("${upload.path}")
     private String uploadPath;
     private final ServletContext servletContext;
     private final DownloadService downloadService;
-
-    @Autowired
-    public DownloadController(ServletContext servletContext, DownloadService downloadService) {
-        this.servletContext = servletContext;
-        this.downloadService = downloadService;
-    }
+    @Value("${android.application.mime-type}")
+    private String mimeType;
 
     @GetMapping("/download")
     public StreamingResponseBody downloadApp(
@@ -40,7 +37,7 @@ public class DownloadController {
 
         // Content-Type
 //        response.setContentType(mediaType.getType());
-        response.setContentType("application/vnd.android.package-archive");
+        response.setContentType(mimeType);
 
         // Content-Disposition
         response.setHeader(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName);
