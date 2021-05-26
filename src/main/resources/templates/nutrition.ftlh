@@ -29,7 +29,7 @@
                 </div>
             </form>
             <div class="column-overlay">
-                <p><@spring.message "label.ifquestion"/> <a href="mailto:poseal@gmail.com" style="color:blue"><@spring.message "label.link"/></a>.</p>
+                <p><@spring.message "label.ifquestion"/> <a href="mailto:poseal.dev@gmail.com?subject=<@spring.message "subject.app.nutrition"/>" style="color:blue"><@spring.message "label.link"/></a>.</p>
             </div>
         </div>
     </div>
