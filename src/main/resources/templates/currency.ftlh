@@ -17,13 +17,16 @@
             <p><h3><@spring.message "label.currencyfrom1"/> <a href="https://obmenka.kharkov.ua/" style="color:blue"><@spring.message "label.thissite"/></a> <@spring.message "label.currencyfrom2"/></h3></p>
             <form class="form-group" method="get" action="/currency/download">
                 <div class="row">
-                    <div class="col">
+                    <div class="col" style="padding-left: 35px">
                         <input type="submit" class="btn btn-primary" value="<@spring.message "button.download"/>"/>
                     </div>
                 </div>
             </form>
             <div class="column-overlay">
                 <p><@spring.message "label.ifquestion"/> <a href="mailto:poseal.dev@gmail.com?subject=<@spring.message "subject.app.currency"/>" style="color:blue"><@spring.message "label.link"/></a>.</p>
+            </div>
+            <div>
+                <a href="<@spring.message "link.playmarket.currency"/>"><img src="../static/img/playMarket.png" width="50%"></a>
             </div>
         </div>
     </div>
