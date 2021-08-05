@@ -14,10 +14,10 @@
             <img src="/img/nutrition_balance1.jpg" class="img-fluid" alt="Responsive image" style="max-width: 250px; height: auto;">
         </div>
         <div class="col" align="center">
-            <img src="/img/nutrition_balance2.jpg" class="img-fluid" alt="Responsive image" style="max-width: 250px; height: auto;">
+            <img src="/img/nutrition_balance3.jpg" class="img-fluid" alt="Responsive image" style="max-width: 250px; height: auto;">
         </div>
         <div class="col" align="center">
-            <img src="/img/nutrition_balance3.jpg" class="img-fluid" alt="Responsive image" style="max-width: 250px; height: auto;">
+            <img src="/img/nutrition_balance4.jpg" class="img-fluid" alt="Responsive image" style="max-width: 250px; height: auto;">
         </div>
         <div class="col">
             <p><h3><@spring.message "label.aboutnutrition2"/></h3></p>
