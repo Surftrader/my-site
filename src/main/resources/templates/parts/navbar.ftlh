@@ -24,6 +24,7 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><@spring.message "label.language"/></a>
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="${springMacroRequestContext.requestUri}?lang=ua"><@spring.message "label.ua"/></a>
                         <a class="dropdown-item" href="${springMacroRequestContext.requestUri}?lang=ru"><@spring.message "label.ru"/></a>
                         <a class="dropdown-item" href="${springMacroRequestContext.requestUri}?lang=en"><@spring.message "label.en"/></a>
                     </div>
