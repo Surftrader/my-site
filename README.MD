@@ -7,8 +7,8 @@ Go to folder
 cd my-syte
 
 Change file application.properties to get access to MySQL database  
-spring.datasource.username=</your name>  
-spring.datasource.password=</your password>  
+spring.datasource.username=your name  
+spring.datasource.password=your password  
   
 Build project  
 mvn clean install
