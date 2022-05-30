@@ -9,7 +9,7 @@ cd my-syte
 Build project  
 mvn clean install
 
-Run project
+Run project  
 java -jar target/my-site-0.0.11-SNAPSHOT-Logo.jar
 
 Go to  
