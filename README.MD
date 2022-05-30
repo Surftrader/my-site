@@ -6,7 +6,7 @@ git clone https://github.com/Surftrader/my-site.git
 Go to folder  
 cd my-syte
 
-Build project
+Build project  
 mvn clean install
 
 Run project
